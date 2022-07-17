@@ -1,0 +1,437 @@
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Title -->
+    <title>Liviu.dev - Blog, CV, Portofoliu</title>
+    <!-- Meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salut! Eu sunt Liviu, web deveoper cu peste 10 ani experienta in domeniu, prieten cu HTML, CSS, JS, PHP si alte tehnologii cool despre care puteti afla mai multe urmarind acest website.">
+    <!-- Favicon Icons - generated from https://favicon.io/favicon-generator/ -->
+    <link rel="icon" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAJZJREFUOE9jVFJSqmNiYqpmYGBgYyAN/Pr3718ro4qKyk8yNMOs+gUy4D9pFqOqxjCAk5OTYebMmSiqTp8+zTB58mSs9mAYwMPDw3D+/HkUxTt27GDIzc0dNYCSMPjw4QPD/fv3GZKSkhi+fPmCEphExQJMh6mpKQPIMGRAfQNACWnOnDlY4zw9PZ2wF0hN1pRnJkqzMwDOR2OnMeM/wgAAAABJRU5ErkJggg==" type="image/png">
+    <link rel="icon" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAANxJREFUWEftlzEKg0AQRf+k1gNsvV7Fa9jYpbIOsQrkCAFLD2FjJZ5DxSrp9AgTDAQkKWYhiQthtv47/89bdpchADtr7QHAnogMNljMfANw6fv+TNbaIxGdNvB9s2DmfAlw3arz1wQLCYqiiH10//TUAE4EgiBAkiTiSdV1ja7rRN1a4BTAGIO2bcXCWZahqipRpwGUgBJQAkrgZwSapsEwDI/6RVFgmibxWf7qX7B2i+MY4zhqACXwJwTCMESapmI3a0FZlpjnWdzjdA3FKh8INID/0cz7cOp7PL8DsWvJa/ozWAgAAAAASUVORK5CYII=" type="image/png">
+    <link rel="icon" sizes="192x192" href="data:image/png;base64,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" type="image/png">
+    <link rel="icon" sizes="512x512" href="/assets/android-chrome-512x512.cfca301d.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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" type="image/png">
+
+    <!-- Main CSS -->
+    
+    <!-- Vite bug when using media - https://github.com/vitejs/vite/issues/6748 -->
+    <!-- Tablet CSS -->
+    
+    <!-- Laptop CSS -->
+    
+    <!-- Desktop CSS -->
+    
+    <!-- Light theme CSS -->
+    <!-- <link rel="stylesheet" href="/assets/css/light.css" media="(prefers-color-scheme: light)"> -->
+    <!-- Poppins Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index.8c344729.js"></script>
+    <link rel="stylesheet" href="/assets/index.c129d0e1.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container flex wrap items-center space-between">
+        <a class="logo" href="#" title="Liviu.dev">Liviu.dev</a>
+        <nav class="nav nav--main">
+          <ul>
+            <li><a class="nav-link" href="#despre-mine" title="Despre Mine">Despre mine<span class="underline"></span></a></li>
+            <li><a class="nav-link" href="#servicii" title="Despre Mine">Servicii<span class="underline"></span></a></li>
+            <li><a class="nav-link" href="#portofoliu" title="Portofoliu">Portofoliu<span class="underline"></span></a></li>
+            <li><a class="nav-link" href="#recomandari" title="Recomandari">Recomandari<span class="underline"></span></a></li>
+            <li><a class="nav-link" href="#experienta" title="Experienta">Experienta<span class="underline"></span></a></li>
+            <li><a class="btn btn--inversat btn--contact" href="#contact" title="Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="nav-toggle hamburger">
+          <span class="hamburger-slice"></span>
+          <span class="hamburger-slice"></span>
+          <span class="hamburger-slice"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero text-center">
+        <div class="container">
+          <h1 class="hero-title">Eu sunt Liviu</h1>
+          <h2 class="hero-subtitle"><span class="typed" data-typed-items="Webmaster, Designer, Developer, Freelancer"></span></h2>
+        </div>
+        <svg class="-index-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,186.7C560,192,640,192,720,197.3C800,203,880,213,960,208C1040,203,1120,181,1200,186.7C1280,192,1360,224,1400,240L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="despre-mine" class="despre-mine"> 
+        <div class="container margin-auto grid cols-2 gap-3 index-1">
+          <div class="shaped">
+            <img src="/assets/feeling_proud.d8c40257.svg" alt="ilustratie">
+          </div>
+          <div>
+            <h3>Despre mine</h3>
+            <h2>Ce iti pot oferi?</h2>
+            <div class="line"><span class="underline"></span></div>
+            <div>
+              <p>Ofer o gamă completă de soluții pentru design, programare si dezvoltare a aplicatiilor web sau mobile. Vă pot ajuta să deschideți portile afacerilor dvs in mediul online, să vă construiți o marca și să luați decizii inteligente cu ajutorul datelor și informațiilor.</p>
+              <div class="skills">
+                <div class="skill">
+                  <div class="skill-title flex space-between"><span>UX/UI Design</span><span>70%</span></div>
+                  <div class="skill-progress skill-progress--70"></div>
+                </div>
+                <div class="skill">
+                  <div class="skill-title flex space-between"><span>HTML/CSS</span><span>90%</span></div>
+                  <div class="skill-progress skill-progress--90"></div>
+                </div>
+                <div class="skill">
+                  <div class="skill-title flex space-between"><span>JavaScript</span><span>85%</span></div>
+                  <div class="skill-progress skill-progress--85"></div>
+                </div>
+                <div class="skill">
+                  <div class="skill-title flex space-between"><span>PHP</span><span>75%</span></div>
+                  <div class="skill-progress skill-progress--75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,128L40,138.7C80,149,160,171,240,186.7C320,203,400,213,480,192C560,171,640,117,720,80C800,43,880,21,960,48C1040,75,1120,149,1200,186.7C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="servicii" class="servicii">
+        <div class="container margin-auto index-1">
+          <div class="text-center">
+            <h3>Servicii</h3>
+            <h2>Ce iti pot oferi?</h2>
+            <div class="line"><span class="underline"></span></div>
+          </div>
+          <div class="services grid cols-3 gap-3">
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">Design Grafic</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">Design Web</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">UI/UX</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">Dezvoltare Web</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">Design arhitectural</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="service">
+              <div class="flex items-center">
+                <div class="service-icon"></div>
+                <h3 class="service-title my-auto">Consultanta</h3>
+              </div>
+              <p class="service-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,288L40,261.3C80,235,160,181,240,160C320,139,400,149,480,170.7C560,192,640,224,720,240C800,256,880,256,960,229.3C1040,203,1120,149,1200,122.7C1280,96,1360,96,1400,96L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="portofoliu" class="portofoliu">
+        <div class="container margin-auto index-1">
+          <h3>Portofoliu</h3>
+          <h2>Ultimele proiecte</h2>
+          <div class="line"><span class="underline"></span></div>
+          <div class="projects grid cols-3 gap-3">
+            <div class="project">
+              <div class="project-image">
+                <img src="/assets/medium.1f819646.jpg" alt="Medium">
+              </div>
+              <h3 class="project-title">medium.com</h3>
+              <p class="project-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="/assets/trello.034b7495.jpg" alt="trello">
+              </div>
+              <h3 class="project-title">trello.com</h3>
+              <p class="project-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="/assets/squarespace.668cc7b5.jpg" alt="squarespace">
+              </div>
+              <h3 class="project-title">squarespace.com</h3>
+              <p class="project-description">Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="text-center">
+            <a class="btn btn--lg btn--primary" href="#">Mai multe</a>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,192L40,202.7C80,213,160,235,240,250.7C320,267,400,277,480,245.3C560,213,640,139,720,90.7C800,43,880,21,960,58.7C1040,96,1120,192,1200,245.3C1280,299,1360,309,1400,314.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="recomandari" class="recomandari">
+        <div class="container text-center margin-auto">
+          <h3>Recomandari</h3>
+          <h2>Ce spun clientii?</h2>
+          <div class="line"><span class="underline"></span></div>
+          <div class="mt-3 grid cols-2 gap-3">
+            <div class="testimonial flex">
+              <div class="testimonial-avatar">
+                <img src="/assets/avatar-1.d1c74e1a.jpg" alt="author">
+              </div>
+              <div class="testimonial-content">
+                <h3 class="testimonial-author">Ioana Pop</h3>
+                <div class="testimonial-title">CEO, DeUnaSingura</div>
+                <p>Lorem ipsum dolor sit amet, consetetuad ipscing elitr, sed diam nonumy eirmodem por invidunt ut labore et dolore magna aliquyam erat sed diam.</p>
+                <ul class="testimonial-review">
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="testimonial flex">
+              <div class="testimonial-avatar">
+                <img src="/assets/avatar-2.3138e622.jpg" alt="author">
+              </div>
+              <div class="testimonial-content">
+                <h3 class="testimonial-author">Alexandra Ion</h3>
+                <div class="testimonial-title">Product Owner, LaOlalta</div>
+                <p>Lorem ipsum dolor sit amet, consetetuad ipscing elitr, sed diam nonumy eirmodem por invidunt ut labore et dolore magna aliquyam erat sed diam.</p>
+                <ul class="testimonial-review">
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star filled"></i></li>
+                  <li><i class="star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,320L40,304C80,288,160,256,240,229.3C320,203,400,181,480,186.7C560,192,640,224,720,245.3C800,267,880,277,960,282.7C1040,288,1120,288,1200,288C1280,288,1360,288,1400,288L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="experienta" class="experienta">
+        <div class="container index-1 text-center margin-auto">
+          <h3>Experienta</h3>
+          <h2>10++ ani in domeniu</h2>
+          <div class="line"><span class="underline"></span></div>
+
+          <div class="exp mt-3">
+            <div class="exp-row grid cols-2">
+              <div class="exp-info">
+                <h3>Graphic Designer</h3>
+                <h4>One Good Company</h4>
+                <p>Martie 2010 - Decembrie 2011</p>
+              </div>
+              <div class="exp-description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor...</p>
+              </div>
+            </div>
+            <div class="exp-row grid cols-2">
+              <div class="exp-info">
+                <h3>Graphic Designer</h3>
+                <h4>One Good Company</h4>
+                <p>Martie 2010 - Decembrie 2011</p>
+              </div>
+              <div class="exp-description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor...</p>
+              </div>
+            </div>
+            <div class="exp-row grid cols-2">
+              <div class="exp-info">
+                <h3>Graphic Designer</h3>
+                <h4>One Good Company</h4>
+                <p>Martie 2010 - Decembrie 2011</p>
+              </div>
+              <div class="exp-description">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sedia magnaliquya ratsed diam Lorem ipsum dolor sit amconsetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam.Lorem ipsum dolor...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,64L40,74.7C80,85,160,107,240,138.7C320,171,400,213,480,197.3C560,181,640,107,720,106.7C800,107,880,181,960,208C1040,235,1120,213,1200,202.7C1280,192,1360,192,1400,192L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container margin-auto index-1">
+          <h3>Contact</h3>
+          <h2>Intrați în legătură cu mine</h2>
+          <div class="line"><span class="underline"></span></div>
+          <p>Aveți un proiect la care putem lucra împreună?</p>
+          <p>Mi-ar plăcea să lucrez cu tine. Completează formularul de mai jos si spune-mi spune mai multe.</p>
+          <form class="form form--contact flex col mt-3">
+            <div class="grid cols-2 gap-2 mb-2">
+              <input type="text" placeholder="Nume">
+              <input type="email" placeholder="E-mail">
+              <textarea name="" id="" cols="30" rows="3" placeholder="Mesaj"></textarea>
+            </div>
+            <button type="submit" class="btn btn--lg btn--primary ml-auto">Trimite</button>
+          </form>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,288L40,240C80,192,160,96,240,80C320,64,400,128,480,154.7C560,181,640,171,720,181.3C800,192,880,224,960,218.7C1040,213,1120,171,1200,170.7C1280,171,1360,213,1400,234.7L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="flex">
+          <nav class="nav nav--footer mx-auto">
+            <ul>
+              <li><a href="mailto:contact@liviu.dev" target="_blank" class="nav-link" title="Despre mine">E-mail: contact@liviu.dev</a></li>
+              <li><a href="tel:+40720814641" class="nav-link" title="Nr de Telefon / WhatsApp">Tel/WhatsApp: +40 720 814 641</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex">
+          <nav class="nav nav--social mx-auto">
+            <ul>
+              <li>
+                <a class="link-social link-social--fb" href="//facebook.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-facebook-line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <g>
+                      <path d="M36.2,63.8h-7.8c-2,0-3.6-1.7-3.6-3.8V36.2h-6.4c-2,0-3.6-1.7-3.6-3.8v-6.9c0-2.1,1.6-3.8,3.6-3.8h6.2v-6.3
+                        c0-9.1,5.4-15.2,13.4-15.2H44c2,0,3.6,1.7,3.6,3.8v8.1c0,2.1-1.6,3.8-3.6,3.8h-4.1c-0.1,0-0.1,0-0.2,0c0,0.1,0,0.2,0,0.3v5.4h5.7
+                        c1.2,0.1,2.2,0.6,2.9,1.4c0.7,0.9,1,2.1,0.8,3.2c0,0,0,0,0,0L47.9,33c-0.2,1.8-1.7,3.1-3.6,3.1h-4.6v23.9
+                        C39.7,62,38.1,63.8,36.2,63.8z M26.5,32.7c1,0,1.8,0.8,1.8,1.8v25.5c0,0.2,0.1,0.3,0.1,0.3l7.8,0c0,0,0.1-0.1,0.1-0.3V34.3
+                        c0-1,0.8-1.8,1.8-1.8h6.3c0,0,0.1,0,0.1-0.1c0,0,0-0.1,0-0.1l1.2-6.7c0-0.2,0-0.3-0.1-0.4c0,0-0.1-0.1-0.2-0.1l-7.4,0
+                        c-1,0-1.8-0.8-1.8-1.8v-7.1c0-1.8,0.3-3.8,3.7-3.8H44c0,0,0.1-0.1,0.1-0.3V4.1c0-0.2-0.1-0.3-0.1-0.3l-5.9,0c-6,0-9.9,4.6-9.9,11.7
+                        v8.1c0,1-0.8,1.8-1.8,1.8h-8c0,0-0.1,0.1-0.1,0.3v6.9c0,0.2,0.1,0.3,0.1,0.3L26.5,32.7z"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-social link-social--in" href="//instagram.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <g>
+                      <path d="M32,17.3c-8.1,0-14.7,6.6-14.7,14.7S23.9,46.7,32,46.7c8.1,0,14.7-6.6,14.7-14.7S40.1,17.3,32,17.3z M32,43.2
+                        c-6.2,0-11.2-5-11.2-11.2c0-6.2,5-11.2,11.2-11.2c6.2,0,11.2,5,11.2,11.2C43.2,38.2,38.2,43.2,32,43.2z"></path>
+                      <path d="M48.1,10.1c-2.1,0-3.8,1.7-3.8,3.8s1.7,3.8,3.8,3.8c2.1,0,3.8-1.7,3.8-3.8S50.2,10.1,48.1,10.1z"></path>
+                      <path d="M48,0.3H16C7.3,0.3,0.3,7.3,0.3,16v32c0,8.7,7.1,15.7,15.8,15.7h32c8.7,0,15.7-7.1,15.7-15.8V16C63.8,7.3,56.7,0.3,48,0.3z
+                        M60.3,48c0,6.8-5.5,12.3-12.2,12.3H16C9.3,60.3,3.8,54.8,3.8,48V16C3.8,9.3,9.3,3.8,16,3.8h32c6.8,0,12.3,5.5,12.3,12.3V48z"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-social link-social--tw" href="//twitter.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <g>
+                      <path d="M20.6,57.9c-7.1,0-13.9-2-19.6-5.9c-0.7-0.5-1-1.3-0.7-2.1s1.1-1.2,1.9-1.1C3.1,48.9,4,49,4.9,49c3.7,0,7.3-0.9,10.5-2.5
+                        c-3.9-1.4-7-4.6-8.4-8.8c-0.2-0.6,0-1.3,0.4-1.7c0.1-0.1,0.2-0.2,0.3-0.2c-3.1-2.6-5-6.4-5-10.7v-0.1c0-0.6,0.3-1.2,0.9-1.5
+                        c0.3-0.2,0.7-0.3,1-0.2c-1.2-2.1-1.8-4.4-1.8-6.9c0-2.5,0.6-4.9,1.9-7c0.3-0.5,0.8-0.8,1.4-0.9c0.6,0,1.1,0.2,1.5,0.6
+                        c5.4,6.7,13.2,10.9,21.7,11.8c0-0.3,0-0.6,0-0.8c0-7.7,6.2-13.9,13.9-13.9c3.5,0,6.8,1.3,9.4,3.7c1.4-0.4,2.8-1.3,4.2-2.2
+                        c0.6-0.4,1.3-0.8,1.9-1.2c0.6-0.3,1.3-0.3,1.8,0c0.6,0.4,0.9,1,0.8,1.7c-0.1,0.5-0.3,2.5-1,4.5c0.6,0,1.2,0,1.5,0
+                        c0.7-0.1,1.4,0.2,1.8,0.8c0.4,0.6,0.4,1.4,0,1.9c-1.4,2.2-3.5,3.6-5.6,5c-0.3,0.2-0.6,0.4-0.9,0.6c0,0.2,0,0.5,0,0.7
+                        C57,39.4,43.4,57.9,20.6,57.9z M8.9,52.2c3.7,1.4,7.6,2.2,11.7,2.2c20.6,0,32.9-16.7,32.9-32.9c0-0.4,0-1,0-1.3
+                        c-0.1-0.6,0.2-1.2,0.7-1.6c0.6-0.4,1.2-0.8,1.7-1.2c0.7-0.5,1.4-1,2.1-1.5c-0.3,0-0.5-0.1-0.8-0.1c-0.6-0.1-1.1-0.5-1.3-1.1
+                        c-0.2-0.6-0.2-1.2,0.2-1.7c0.2-0.3,0.5-0.8,0.7-1.3c-1.4,0.8-2.9,1.6-4.6,1.9c-0.6,0.1-1.2-0.1-1.6-0.5c-2-2.1-4.7-3.3-7.6-3.3
+                        c-5.7,0-10.4,4.7-10.4,10.4c0,0.7,0.1,1.5,0.3,2.4c0.1,0.5,0,1.1-0.4,1.5c-0.3,0.4-0.9,0.6-1.4,0.6C21.8,24.1,13,20.1,6.6,13.4
+                        c-0.3,0.9-0.4,1.9-0.4,2.9c0,3.5,1.7,6.7,4.6,8.6c0.7,0.4,0.9,1.2,0.7,2c-0.2,0.7-1,1.2-1.7,1.2c-1.1,0-2.3-0.2-3.4-0.5
+                        c1,3.8,4,6.8,8,7.6c0.8,0.2,1.4,0.9,1.4,1.7c0,0.8-0.5,1.5-1.3,1.7c-1.1,0.3-2.1,0.4-3,0.5c1.9,2.8,5,4.6,8.5,4.7
+                        c0.7,0,1.4,0.5,1.6,1.2c0.2,0.7,0,1.5-0.6,1.9C17.5,49.8,13.3,51.5,8.9,52.2z"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-social link-social--ln" href="//linkedin.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M14.6,63H5.7C2.6,63,0,60.5,0,57.5V28c0-3.1,2.5-5.5,5.7-5.5h8.9c3.1,0,5.7,2.5,5.7,5.5v29.5C20.4,60.5,17.8,63,14.6,63z
+                          M5.7,27.4c-0.3,0-0.6,0.1-0.6,0.4v29.5c0,0.1,0.1,0.4,0.6,0.4h8.9c0.3,0,0.6-0.1,0.6-0.4V28c0-0.1-0.3-0.4-0.6-0.4H5.7V27.4z"></path>
+                      </g>
+                      <g>
+                        <path d="M58.8,63h-9c-3.1,0-5.7-2.5-5.7-5.5V45.3c0-0.6-0.4-1-1.2-1c-0.6,0-1.2,0.4-1.2,1v12.1c0,3.1-2.5,5.5-5.7,5.5h-8.9
+                          c-3.1,0-5.7-2.5-5.7-5.5V28c0-3.1,2.5-5.5,5.7-5.5H36c1.9,0,3.5,0.9,4.5,2.3c0.4-0.1,0.9-0.4,1.2-0.6c3.1-1.5,6.6-1.9,9.8-1.5l0,0
+                          c7,0.9,12.4,6.7,12.5,13.7v21.3C64.3,60.5,61.8,63,58.8,63z M43,39.4c3.4,0,6.1,2.8,6.1,6v12.1c0,0.1,0.1,0.4,0.6,0.4h8.9
+                          c0.3,0,0.6-0.1,0.6-0.4V36.3c-0.1-4.4-3.6-8.2-8.2-8.6c-2.3-0.3-5,0.1-7.3,1.2c-1.2,0.4-2.2,1.2-3.2,1.8l-3.9,2.8V28
+                          c0-0.1-0.1-0.4-0.6-0.4h-8.9c-0.3,0-0.6,0.1-0.6,0.4v29.5c0,0.1,0.1,0.4,0.6,0.4h9c0.3,0,0.6-0.1,0.6-0.4V45.3
+                          C36.9,42,39.5,39.4,43,39.4z"></path>
+                      </g>
+                      <g>
+                        <path d="M10.8,21.9c-5.8,0-10.6-4.7-10.6-10.5S4.8,1,10.8,1s10.6,4.7,10.6,10.5S16.6,21.9,10.8,21.9z M10.8,6.1
+                          c-3.1,0-5.7,2.5-5.7,5.4c0,3.1,2.5,5.4,5.7,5.4s5.7-2.5,5.7-5.4C16.5,8.4,14,6.1,10.8,6.1z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-social link-social--gh" href="//github.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-github" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <path d="M63.7,31c-0.6-16.3-14-29.6-30.3-30.3C24.6,0.4,16.3,3.5,10,9.6c-6.3,6.1-9.8,14.2-9.8,22.9c0,14.4,9.7,27,23.5,30.7l0,0
+                      c0.3,0.1,0.7,0.1,1,0.1c0.8,0,1.6-0.3,2.3-0.8c0.9-0.7,1.5-1.8,1.5-3v-3.5c0-1,0.1-5.2,0.1-5.9c0.1-0.7,0.3-1.2,0.7-1.7
+                      c0.5-0.7,0.6-1.5,0.2-2.3c-0.3-0.7-1-1.1-1.8-1.2c-0.7-0.1-1.5-0.2-2-0.4c-0.8-0.2-1.7-0.6-2.6-1.1c-0.7-0.4-1.3-0.9-1.9-1.6
+                      c-0.5-0.6-0.9-1.5-1.3-2.7c-0.4-1.3-0.6-2.7-0.6-4.2c0-2.1,0.6-3.7,1.9-5.2l0.8-0.8l-0.4-1C21,27,21,25.8,21.4,24.3
+                      c0.2,0.1,0.5,0.2,0.8,0.3c1.5,0.6,2,0.9,2.2,1l0.1,0.1c0.4,0.2,0.7,0.5,1,0.6l1,0.6l0.7-0.2c1.8-0.5,3.6-0.7,5.5-0.7
+                      c1.9,0,3.7,0.2,5.5,0.7l0.7,0.2l1.8-1.1c0.8-0.5,1.7-0.9,2.5-1.2c0.3-0.1,0.5-0.2,0.7-0.2c0.4,1.4,0.4,2.7-0.1,3.9l-0.4,1L44,30
+                      c1.3,1.4,1.9,3.1,1.9,5.2c0,1.6-0.2,3-0.6,4.1c-0.4,1.1-0.8,2-1.4,2.7c-0.5,0.6-1.2,1.1-2,1.6c-1,0.5-1.8,0.8-2.6,1.1
+                      c-0.6,0.2-1.4,0.3-2.2,0.4c-0.7,0.1-1.3,0.6-1.6,1.3c-0.3,0.7-0.2,1.4,0.2,2.1c0.5,0.7,0.7,1.6,0.7,2.8v8c0,1.2,0.6,2.3,1.6,3
+                      c1,0.7,2.2,0.9,3.3,0.6C55.3,58.7,64.5,45.5,63.7,31z M40.4,59.6c-0.1,0-0.2,0-0.2,0c0,0-0.1-0.1-0.1-0.2v-8c0-1.1-0.2-2.1-0.5-3.1
+                      c0.3-0.1,0.5-0.1,0.8-0.2c1.1-0.3,2.1-0.7,3.4-1.4c1.3-0.8,2.2-1.6,3-2.4c1-1.1,1.5-2.5,2-3.8c0.5-1.5,0.8-3.2,0.8-5.2
+                      c0-2.6-0.7-4.8-2.2-6.7c0.5-2,0.3-4.2-0.6-6.5l-0.3-0.8l-0.8-0.3c-1-0.3-2.2-0.2-3.7,0.4c-1,0.4-2.1,0.9-3.1,1.5l-0.6,0.3
+                      c-1.9-0.5-3.7-0.7-5.7-0.7c-1.9,0-3.8,0.2-5.7,0.7c-0.2-0.1-0.4-0.2-0.6-0.4c-0.6-0.4-1.5-0.8-2.8-1.3c-1.6-0.7-2.9-0.9-3.9-0.5
+                      l-0.8,0.3l-0.3,0.8c-0.9,2.4-1.1,4.6-0.5,6.5c-1.4,1.9-2.2,4.2-2.2,6.7c0,1.8,0.2,3.5,0.7,5.2c0.5,1.6,1.1,2.9,1.9,3.9
+                      c0.9,1.1,1.9,1.9,3,2.5c1.1,0.6,2.2,1,3.3,1.3c0.3,0.1,0.5,0.1,0.8,0.2c-0.2,0.5-0.3,1.1-0.4,1.6l0,0.2c0,0,0,1.6,0,3.1
+                      c-2.7-0.9-4.8-2.1-6.6-4c-1.3-1.5-2.8-2.9-3.5-3.3c-1.5-0.7-2.5,0.8-2.2,1.6c0.3,1.1,1.9,1.7,2.7,2.5c0.9,1,1.1,2.3,1.9,3.3
+                      c1.1,1.6,4.9,3.5,7.7,3.2v3c0,0,0,0.1-0.1,0.2c0,0-0.1,0.1-0.2,0C12.4,56.5,3.8,45.3,3.8,32.5c0-7.8,3.1-15,8.7-20.4
+                      c5.6-5.4,13-8.2,20.8-7.9c14.6,0.6,26.4,12.4,27,26.9C60.9,44.1,52.7,55.8,40.4,59.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link-social link-social--yt" href="//youtube.com" target="_blank">
+                  <svg fill="currentColor" width="40" height="40" version="1.1" id="lni_lni-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                    <path d="M61.7,17.1c-0.7-2.7-2.8-4.8-5.5-5.5C51.4,10.3,32,10.3,32,10.3s-19.4,0-24.2,1.3c-2.7,0.7-4.8,2.8-5.5,5.5C1,22,1,32,1,32
+                      s0,10.1,1.3,14.9c0.7,2.7,2.8,4.8,5.5,5.5c4.8,1.3,24.2,1.3,24.2,1.3s19.4,0,24.2-1.3c2.7-0.7,4.8-2.8,5.5-5.5C63,42.1,63,32,63,32
+                      S63,22,61.7,17.1z M25.8,41.3V22.7L41.9,32L25.8,41.3z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex">
+          <p class="copy mx-auto">
+            Liviu.dev © 2022 🟡 Toate drepturile rezervate.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="back-to-top flex items-center content-center">
+      <a href="#" title="Intoarce-te la inceput">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+      </a>
+    </div>
+    
+    <!-- Main JS -->
+    
+  </body>
+</html>
